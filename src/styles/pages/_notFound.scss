@@ -1,0 +1,36 @@
+.notFound-page {
+    background: url("../../../public/medias/images/notFound/notFound.jpg");
+    padding: 0;
+}
+
+.notFoundContent {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 80px;
+    }
+
+    nav li {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row-reverse;
+
+        div {
+            transform: rotate(90deg);
+            position: relative;
+            right: 10px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $color2;
+    }
+}

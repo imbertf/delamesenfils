@@ -1,0 +1,12 @@
+.logoContent {
+    width: 150px;
+    height: 150px;
+    @media screen and (max-width: 280px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        height: 100%;
+    }
+}

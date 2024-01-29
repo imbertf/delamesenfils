@@ -1,0 +1,152 @@
+.cardWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10rem 0;
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+  }
+
+  &-links {
+    box-shadow: 0 0 2px 0px $color2;
+    height: 500px;
+    width: 30%;
+    text-decoration: none;
+    @media screen and (max-width: 780px) {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+
+    & h2 {
+      color: $color4;
+      text-align: center;
+    }
+  }
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-img {
+    width: 33%;
+    height: 400px;
+    @media screen and (max-width: 780px) {
+      width: 80%;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.sectionContent {
+  background: url(http://localhost:3000/medias/images/atelier/atelier22.jpg) 50%
+    13% no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  @media screen and (max-width: 780px) {
+    padding: 0 20px;
+  }
+
+  &-txt {
+    width: 50%;
+    margin: 3rem 0;
+
+    &--lg {
+      width: 80%;
+    }
+
+    & p {
+      // background: $color1;
+      border: none;
+      box-shadow: 0 0 5px 1px $color1;
+
+      & a {
+        text-decoration: none;
+        color: $color5;
+        font-weight: bold;
+      }
+    }
+    @media screen and (max-width: 780px) {
+      width: auto;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: $color1;
+      font-weight: 100;
+      font-size: 30px;
+      @media screen and (max-width: 780px) {
+        font-size: 20px;
+      }
+    }
+
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      padding: 45px;
+      margin: 15px 0;
+      @media screen and (max-width: 780px) {
+        padding: 20px;
+        border: none;
+        text-align: center;
+      }
+    }
+  }
+
+  &-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    a {
+      text-decoration: none;
+      margin: 5px 0;
+    }
+
+    svg {
+      margin: 5px 0;
+      cursor: pointer;
+    }
+  }
+
+  &-partners {
+    margin: 3rem 0;
+  }
+
+  &-news {
+    @media screen and (max-width: 780px) {
+      margin: 15px 0;
+    }
+  }
+}
+
+.flex-direction {
+  justify-content: space-evenly;
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}

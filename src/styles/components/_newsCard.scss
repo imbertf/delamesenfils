@@ -1,0 +1,28 @@
+.newsCard {
+  background-color: $color1;
+  box-shadow: 0 0 5px 1px #252323;
+  padding: 1px;
+
+  &-img {
+    width: 100%;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &-txt {
+    padding: 45px;
+    & p {
+      border: none;
+      padding: 0;
+      @media screen and (max-width: 780px) {
+        padding: 20px;
+      }
+    }
+
+    &-signature {
+      color: $color5;
+    }
+  }
+}

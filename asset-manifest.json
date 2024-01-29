@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/de_lames_en_fils/static/css/main.19990800.css",
+    "main.js": "/de_lames_en_fils/static/js/main.d679b79a.js",
+    "static/media/atelier12.jpg": "/de_lames_en_fils/static/media/atelier12.4ec6a721020d036e3317.jpg",
+    "static/media/notFound.jpg": "/de_lames_en_fils/static/media/notFound.97a3c8e0f72592519217.jpg",
+    "index.html": "/de_lames_en_fils/index.html",
+    "main.19990800.css.map": "/de_lames_en_fils/static/css/main.19990800.css.map",
+    "main.d679b79a.js.map": "/de_lames_en_fils/static/js/main.d679b79a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19990800.css",
+    "static/js/main.d679b79a.js"
+  ]
+}

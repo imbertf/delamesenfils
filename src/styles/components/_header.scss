@@ -1,0 +1,24 @@
+.header {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid $color6;
+
+    &-bgContent {
+        width: 100%;
+        height: 270px;
+        box-shadow: 0 0 5px 1px #252323;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-navigation {
+        display: flex;
+        @media screen and (max-width: 280px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

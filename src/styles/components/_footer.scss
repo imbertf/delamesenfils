@@ -1,0 +1,81 @@
+.footerContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 0 5px dimgrey;
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+  }
+
+  &-webdeveloper {
+    text-align: center;
+    color: white;
+    padding: 18px;
+    @media screen and (max-width: 780px) {
+      width: 100%;
+    }
+
+    & a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  &-contact {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    @media screen and (max-width: 780px) {
+      text-align: center;
+    }
+  }
+
+  &-social {
+    display: flex;
+    font-size: 35px;
+    width: 300px;
+    justify-content: space-between;
+    margin: 0 1em;
+
+    &-instagram path {
+      color: #d62976;
+    }
+
+    &-facebook path {
+      color: #3b5998;
+    }
+
+    @media screen and (max-width: 780px) {
+      flex-direction: column;
+      align-items: center;
+      height: 200px;
+      margin: 30px 0;
+      width: auto;
+    }
+
+    path {
+      cursor: pointer;
+    }
+  }
+
+  .pepiteggsContent {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      text-decoration: none;
+    }
+    .pepiteggs {
+      color: greenyellow;
+    }
+  }
+}
+
+.is-active {
+  display: initial;
+}
+
+.showPepiteggs {
+  color: white;
+  cursor: pointer;
+}
