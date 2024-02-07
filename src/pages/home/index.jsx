@@ -54,18 +54,14 @@ const Home = () => {
       <Header picture={"./medias/images/couteaux/couteau2-filter.webp"} />
       <div className="pageWrapper">
         <div className="pageWrapper-content">
-          {/* <div className="title metallic-gradient">
-            <h1>Bienvenue chez De lames en fils</h1>
-          </div> */}
-
           <section className="cardWrapper">
-            <Link to="/creations" className="cardWrapper-links">
+            <Link to="/couteaux" className="cardWrapper-links">
               <Card
                 picture={`/medias/images/atelier/atelier4.webp`}
                 alt="Carte créations"
                 text="Créations"
               />
-              <h2>Créations</h2>
+              <h2>Couteaux</h2>
             </Link>
             <Link to="/stages" className="cardWrapper-links">
               <Card
