@@ -77,6 +77,42 @@ const Products = () => {
           </section>
           <section className="productGallery">
             <ProductCard
+              title="Pollux"
+              image="/medias/images/apero/apero3.webp"
+              text="Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page."
+              price="10€"
+            />
+            <ProductCard
+              title="Apéro"
+              image="/medias/images/apero/apero3.webp"
+              text="Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page."
+              price="10€"
+            />
+            <ProductCard
+              title="Shitake"
+              image="/medias/images/apero/apero3.webp"
+              text="Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page."
+              price="10€"
+            />
+            <ProductCard
+              title="couteau"
+              image="/medias/images/apero/apero3.webp"
+              text="Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page."
+              price="10€"
+            />
+            <ProductCard
+              title="couteau"
+              image="/medias/images/apero/apero3.webp"
+              text="Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page."
+              price="10€"
+            />
+            <ProductCard
+              title="couteau"
+              image="/medias/images/apero/apero3.webp"
+              text="Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page."
+              price="10€"
+            />
+            <ProductCard
               title="couteau"
               image="/medias/images/apero/apero3.webp"
               text="Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page."
