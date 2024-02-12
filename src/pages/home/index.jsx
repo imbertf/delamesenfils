@@ -48,16 +48,11 @@ const Home = () => {
 
     fetchData();
   }, []);
-  console.log(data);
   return (
     <>
       <Header picture={"./medias/images/couteaux/couteau2-filter.webp"} />
       <div className="pageWrapper">
         <div className="pageWrapper-content">
-          {/* <div className="title metallic-gradient">
-            <h1>Bienvenue chez De lames en fils</h1>
-          </div> */}
-
           <section className="cardWrapper">
             <Link to="/creations" className="cardWrapper-links">
               <Card
@@ -134,9 +129,12 @@ const Home = () => {
               <h2>Actualités</h2>
               <p>
                 Venez à ma rencontre sur les marchés locaux de Grenoble et ses
-                environs. Découvrez mes couteaux de près, échangeons et trouvez
-                le couteau parfait pour vous. Restez informé et connecté avec De
-                lames en fils sur{" "}
+                environs pour découvrir mes rélisations de près.
+                <br />
+                Echangeons et trouvez le couteau parfait pour vous.
+                <br />
+                <br />
+                Restez informé et connecté avec De lames en fils sur{" "}
                 <Link
                   to="https://instagram.com/de_lames_en_fils?igshid=YmMyMTA2M2Y="
                   target="_blank"
@@ -154,31 +152,31 @@ const Home = () => {
                 >
                   Facebook
                 </Link>
-                . Explorez les actualités de De lames en fils pour plonger dans
+                .
+                <br />
+                Explorez les actualités de De lames en fils pour plonger dans
                 l'art de la coutellerie, que ce soit à travers mes créations
                 exceptionnelles, mes stages de formation enrichissants ou sur
-                les marchés locaux.
+                les marchés en Isère.
               </p>
               <div className="sectionContent-news">
-                {data ? (
-                  data.map((post, index) => (
-                    <article className="newsCard" key={index}>
-                      <div className="newsCard-img">
-                        <img src={post.media_url} alt="" />
-                      </div>
-                      <div className="newsCard-txt">
-                        <p>{post.caption}</p>
-                        <p className="newsCard-txt-signature">
-                          {post.username}
-                          <br />
-                          {post.formattedTimestamp}
-                        </p>
-                      </div>
-                    </article>
-                  ))
-                ) : (
-                  <li>Loading...</li>
-                )}
+                {data
+                  ? data.map((post, index) => (
+                      <article className="newsCard" key={index}>
+                        <div className="newsCard-img">
+                          <img src={post.media_url} alt="" />
+                        </div>
+                        <div className="newsCard-txt">
+                          <p>{post.caption}</p>
+                          <p className="newsCard-txt-signature">
+                            {post.username}
+                            <br />
+                            {post.formattedTimestamp}
+                          </p>
+                        </div>
+                      </article>
+                    ))
+                  : ""}
               </div>
             </div>
           </section>
