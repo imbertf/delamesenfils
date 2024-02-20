@@ -1,3 +1,18 @@
+.products {
+  &-gallery {
+    padding: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .productGallery {
+    justify-content: center;
+  }
+}
+
 .metallic-gradient {
   background: linear-gradient(45deg, #70798c, #d4d4d4, #878787, #d4d4d4);
   border-radius: 8px;
@@ -24,6 +39,10 @@
   }
 }
 
+.productsPage-title {
+  margin-bottom: 3rem;
+}
+
 .title {
   display: flex;
   justify-content: center;
@@ -43,7 +62,7 @@
   h1 {
     font-weight: 100;
     font-size: 30px;
-    color: #fff; /* Adjust text color as needed */
+    color: #fff;
   }
 
   h2 {
@@ -52,32 +71,6 @@
     color: $color3;
   }
 }
-
-// .title {
-//   display: flex;
-//   justify-content: center;
-//   margin: 3rem 0;
-//   background: $color2;
-//   height: 150px;
-//   align-items: center;
-//   opacity: 0.9;
-//   border-radius: 5px;
-//   @media screen and (max-width: 780px) {
-//     text-align: center;
-//     height: auto;
-//     padding: 10px;
-//   }
-//   h1 {
-//     font-weight: 100;
-//     font-size: 30px;
-//     color: $color3;
-//   }
-//   h2 {
-//     width: 80%;
-//     font-weight: 100;
-//     color: $color3;
-//   }
-// }
 
 .spaceEvenly {
   justify-content: space-evenly;
@@ -107,9 +100,6 @@
     width: auto;
   }
   &-txt {
-    border: 1px solid #780000;
-    padding: 25px;
-    font-size: 13px;
     margin: 20px 0;
   }
 }
@@ -120,7 +110,6 @@
   width: 50%;
   margin: 20px 40px;
   padding: 25px;
-  font-size: 13px;
   @media screen and (max-width: 780px) {
     width: auto;
     margin: 20px 0;

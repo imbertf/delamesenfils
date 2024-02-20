@@ -1,0 +1,61 @@
+2024
+
+lien Etsy
+check ETSY API
+card product
+
+retirer Belledonne sur https://delamesenfils.fr/apero
+add contact on https://delamesenfils.fr/partenaires
+
+get access token
+
+token test IGQWROS3RtWXZA4U0U2N19ZAbmstTzZAidUs0aXoyUlNDSDNlZAW1XdFd4bS05TDZAmNDd3OV9rXzZAaTWllVk01ZAFRJUXl5TUVYQjA3Wk5IRnhmekNCV1U2eWdyNlJSWFR1RTRwYTNMT0hhanZAqZA0VSYVRTVU51eGJUSDQZD
+
+https://api.instagram.com/oauth/authorize
+  ?client_id=1045535110059623
+  &redirect_uri=https://socialsizzle.herokuapp.com/auth/
+  &scope=user_profile,user_media
+  &response_type=code
+
+AQBRFaU25Jh-BIbR9eCJ443XtaMaJWZNVY9H8xJYjJc4g0aLNjbab_viVwfymdgdjo9gTwekIuUcbOwl2q_jbsuGtZm_zeZR7MEaN7opyVTn-3ZY7KdGWRh-38pp7D9IZd-X6XnmobwNcoXZKo7yjltIlrn0HvvRwqMy9b_TNohrWucc7_PAmcEnI-S3-Y7ivC9L72przLNsWlhPUY4p5kpuPXQRg_7kOFcOvGo_gbQ_Eg
+
+curl -X POST \
+  https://api.instagram.com/oauth/access_token \
+  -F client_id=1045535110059623 \
+  -F client_secret=90a4685466090e31282985ed907009a3 \
+  -F grant_type=authorization_code \
+  -F redirect_uri=https://socialsizzle.heroku.com/auth/ \
+  -F code=AQBRFaU25Jh-BIbR9eCJ443XtaMaJWZNVY9H8xJYjJc4g0aLNjbab_viVwfymdgdjo9gTwekIuUcbOwl2q_jbsuGtZm_zeZR7MEaN7opyVTn-3ZY7KdGWRh-38pp7D9IZd-X6XnmobwNcoXZKo7yjltIlrn0HvvRwqMy9b_TNohrWucc7_PAmcEnI-S3-Y7ivC9L72przLNsWlhPUY4p5kpuPXQRg_7kOFcOvGo_gbQ_Eg
+
+get long access token
+
+curl -X GET \ https://graph.instagram.com/access_token?grant_type=ig_exchange_token&&client_secret=90a4685466090e31282985ed907009a3&access_token=IGQWRQT3FVVEdpLWdnNFVmSm9vdkRVV3JuNmVQY1pBNnh2N000c0YtWEZAZAbzVxbjlmWlNMMTdUVFd3eTZAsTGlLRFVmS3VlektCRFFTUXBQaVBtSTB2MWJTZAVpvZAkF4ZAjYxRThSekh0LXdwY0tFT1BINGd2TXQzS0RQb3dlSnNjcEg2ZAwZDZD
+
+{
+    "access_token": "IGQWRQT0tIVnpwNDlacW8wNDEwM05sbnBWNUwwVExzMmVKbnN4LXN2dW5YWmYtMjFNeUVsZAUtTSGRYUGVrbDd2MEFQOFh3ZAWozal9vdnJaY0R3ZA29wOWdPSzlVY3RjNUpob0FzMXp3enRBQQZDZD",
+    "token_type": "bearer",
+    "expires_in": 5181853
+}
+
+get medias
+
+  curl -X GET \ https://graph.instagram.com/me/media?fields=id,caption&access_token=IGQWRQT0tIVnpwNDlacW8wNDEwM05sbnBWNUwwVExzMmVKbnN4LXN2dW5YWmYtMjFNeUVsZAUtTSGRYUGVrbDd2MEFQOFh3ZAWozal9vdnJaY0R3ZA29wOWdPSzlVY3RjNUpob0FzMXp3enRBQQZDZD
+
+curl -X GET \ https://graph.instagram.com/17847271574065451?fields=id,media_type,media_url,username,timestamp&access_token=IGQWRQT0tIVnpwNDlacW8wNDEwM05sbnBWNUwwVExzMmVKbnN4LXN2dW5YWmYtMjFNeUVsZAUtTSGRYUGVrbDd2MEFQOFh3ZAWozal9vdnJaY0R3ZA29wOWdPSzlVY3RjNUpob0FzMXp3enRBQQZDZD
+
+get access token delamesenfils
+
+https://api.instagram.com/oauth/authorize
+  ?client_id=24500807162868277
+  &redirect_uri=https://delamesenfils.fr/
+  &scope=user_profile,user_media
+  &response_type=code
+
+result 
+
+https://delamesenfils.fr/?code=AQD3N8VOJH_u2F_w9c8CWpoEaykthP-G7z2eG9tp-qrILNYKkCz6MQVSO12EvQrHNi6V7VoeXhG8_FyeXQbfuUQPORhfbf6FTcoChZX9WC_UycePWCpvkGs41ROWOnRis2xXO4D8Oz_6cOy98_ECZOh5dU_Ni9iQooaAnYYfjR_WTx1-9C5X_0Y59nw_fSCq6Yj7BQJ5thxdNWAYOgdV8MZdbva10jmn0UDNsfSSnWGL9g
+
+code : AQD3N8VOJH_u2F_w9c8CWpoEaykthP-G7z2eG9tp-qrILNYKkCz6MQVSO12EvQrHNi6V7VoeXhG8_FyeXQbfuUQPORhfbf6FTcoChZX9WC_UycePWCpvkGs41ROWOnRis2xXO4D8Oz_6cOy98_ECZOh5dU_Ni9iQooaAnYYfjR_WTx1-9C5X_0Y59nw_fSCq6Yj7BQJ5thxdNWAYOgdV8MZdbva10jmn0UDNsfSSnWGL9g
+
+generate token result 
+IGQWRQZATJwaFc0amRPVi1ONHY3YVkxRFRFZAmt3dlprQ1BMaWlkWW8wZAHNIU0tjb09VYThraDZAlOENWbTA1UnFBQnF4Ui1rM2otMlR1b0lHbGlTZA2ZAWOTg0dXFvdjVjTFJfMDJlVkJhMzJ0dkN1V0tYYTlrSTJfaEkZD

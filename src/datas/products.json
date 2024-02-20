@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Le Chef",
+    "description": "l'indispensable en cuisine, il est idéal pour émincer, ciseler, tailler, hacher, découper tout type de viande / legumes ou écraser des aliments pour en récupérer le jus ou la chair (une gousse d’ail par exemple)",
+    "url": "/medias/images/products/chef.jpg",
+    "price": "200",
+    "link": "1667682632",
+    "materials": ["acier", "bois"]
+  },
+  {
+    "name": "Le Viandard",
+    "description": "Conçus pour couper la viande cuite ou crue, en particulier les steaks et les rôtis. Il permet de couper les viandes tendres et juteuses sans les écraser ou les déchirer.",
+    "url": "/medias/images/products/viande.jpg",
+    "price": "200",
+    "link": "1681852961",
+    "materials": ["acier", "bois"]
+  },
+  {
+    "name": "Le P'tit costaud",
+    "description": "Etudié pour casser la croute en randonnée comme pour tailler un bout de bois, le p'tit costaud est un vrai couteau polyvalent. Son étui en kydex permet de l'avoir à la ceinture en toute circonstance.",
+    "url": "/medias/images/products/ptit_costaud.jpg",
+    "price": "135",
+    "link": "1681852215",
+    "materials": ["acier", "bois"]
+  },
+  {
+    "name": "Le chasseur",
+    "description": "Couteau de chasse en acier forgé, sa lame en drop point le rends idéal pour les tâches de découpe et de dépecage. Son étuis provenant de la sellerie de chartreuse permet un port à la ceinture avec un excellent maintient.",
+    "url": "/medias/images/products/chasseur.jpg",
+    "price": "260",
+    "link": "1667680592",
+    "materials": ["90mcv8", "ébene", "érable"]
+  },
+  {
+    "name": "L'élancé",
+    "description": "Couteau de table fin et élégant, il est du plus bel effet une fois la table dréssé.",
+    "url": "/medias/images/products/elance.jpg",
+    "price": "120",
+    "link": "1681850277",
+    "materials": ["acier", "bois"]
+  },
+  {
+    "name": "L'office",
+    "description": "Couteau à tout faire en cuisine, l'office vous permettra aisément d'éplucher et de peler tous vos fruits et vos légumes, découper viandes et légumes, retirer la peau, dégraisser et dénerver vos pièces de viande avant de les faire cuire.",
+    "url": "/medias/images/products/office.jpg",
+    "price": "130",
+    "link": "1667678374",
+    "materials": ["acier", "bois"]
+  },
+  {
+    "name": "Le grand-mère",
+    "description": "Petit cousin de l'office, il est inspiré par les vieux couteaux que l'on peut parfois encore retrouver chez nos anciens. Sa petite lame lui permet éplucher et de peler les fruits ainsi que de les équeuter et de les épépiner avec minutie.",
+    "url": "/medias/images/products/grand_mere.jpg",
+    "price": "100",
+    "link": "1667677338",
+    "materials": ["acier", "bois"]
+  }
+]

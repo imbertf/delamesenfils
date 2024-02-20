@@ -11,21 +11,21 @@ import Partners from "./pages/partners";
 import ScrollTopButton from "./components/Button/ScrollTopButton";
 
 const App = () => {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/creations" element={<Products />} />
-                <Route path="/pollux" element={<Pollux />} />
-                <Route path="/apero" element={<Apero />} />
-                <Route path="/stages" element={<Stages />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/partenaires" element={<Partners />} />
-                <Route path="*" element={<NotFound />} />
-            </Routes>
-            <ScrollTopButton />
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/couteaux" element={<Products />} />
+        <Route path="/pollux" element={<Pollux />} />
+        <Route path="/apero" element={<Apero />} />
+        <Route path="/stages" element={<Stages />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/partenaires" element={<Partners />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <ScrollTopButton />
+    </BrowserRouter>
+  );
 };
 
 export default App;
