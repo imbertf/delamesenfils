@@ -48,7 +48,7 @@ const Home = () => {
 
     fetchData();
   }, []);
-  console.log(data);
+
   return (
     <>
       <Header picture={"./medias/images/couteaux/couteau2-filter.webp"} />
@@ -173,7 +173,7 @@ const Home = () => {
                     </article>
                   ))
                 ) : (
-                  <li>Loading...</li>
+                  <li>Mise à jour en cours</li>
                 )}
               </div>
             </div>
@@ -191,37 +191,6 @@ const Home = () => {
             picture={"./medias/images/atelier/atelier12.webp"}
             alt={"Adrien"}
           />
-          {/* <section className="sectionContent">
-            <div className="sectionContent-txt" data-aos="zoom-in">
-              <h2>Création de couteau sur mesure</h2>
-              <p>
-                Bienvenue dans un monde de créativité ! En tant que coutelier,
-                je suis passionné par la création de couteaux personnalisés
-                uniques et adaptés à vos besoins et préférences spécifiques.
-                <br />
-                <br /> Que vous soyez un chef professionnel à la recherche de
-                l'outil parfait pour améliorer vos compétences culinaires ou un
-                simple amateur envieux d'un couteau fait main, je suis là pour
-                donner vie à votre vision.
-                <br />
-                <br /> Avec des années d'expérience dans la fabrication de
-                couteaux, je m'engage à n'utiliser que les meilleurs matériaux
-                et techniques pour créer un produit vraiment exceptionnel. Du
-                manche à la lame, chaque aspect de votre couteau personnalisé
-                sera conçu et fabriqué avec précision et soin.
-                <br />
-                <br />
-                Donc, si vous êtes prêt à passer à l'étape suivante en possédant
-                un couteau personnalisé, je vous invite à m'envoyer un message
-                en utilisant le formulaire de contact ci-dessous. Échangeons
-                donc sur vos idées et vos préférences, et ensemble nous créerons
-                une pièce unique que vous chérirez pour les années à venir.
-                <br />
-                <br /> Merci de me considérer pour vos besoins de couteaux
-                personnalisés, et j'ai hâte d'avoir de vos nouvelles bientôt !
-              </p>
-            </div>
-          </section> */}
           <ContactMe />
         </div>
       </div>
