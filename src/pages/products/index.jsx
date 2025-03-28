@@ -91,7 +91,6 @@ const Products = () => {
                   description={product.description}
                   price={product.price}
                   key={index}
-                  link={product.link}
                   materials={product.materials}
                 />
               ))}

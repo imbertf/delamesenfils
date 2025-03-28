@@ -78,14 +78,6 @@ const Footer = () => {
       <div className={isOpen ? "is-active" : "is-inactive"}>
         <div className="pepiteggsContent">
           <span className="pepiteggs">🐈‍⬛ MI MI MI ! </span>
-          {/* <Link
-            to="https://www.imbertf.fr/"
-            className="pepiteggs"
-            target="_blank"
-            rel="noreferrer"
-          >
-            www.imbertf.fr
-          </Link> */}
         </div>
       </div>
     </footer>
