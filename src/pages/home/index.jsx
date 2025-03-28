@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Article from "../../components/Article";
 import Card from "../../components/Cards";
@@ -7,48 +6,6 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 const Home = () => {
-  const [data, setData] = useState(null);
-
-  const formatTimestamp = (timestamp) => {
-    const options = {
-      day: "numeric",
-      month: "long",
-      year: "numeric",
-      hour: "numeric",
-      minute: "numeric",
-      hour12: false,
-    };
-
-    return new Date(timestamp).toLocaleDateString("fr-FR", options);
-  };
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          `https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption,username,timestamp&access_token=${process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-
-        const result = await response.json();
-        const currentNews = result.data.slice(0, 1).map((post) => {
-          return {
-            ...post,
-            formattedTimestamp: formatTimestamp(post.timestamp),
-          };
-        });
-        setData(currentNews);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
   return (
     <>
       <Header picture={"./medias/images/couteaux/couteau2-filter.webp"} />
@@ -128,6 +85,23 @@ const Home = () => {
           <section className="sectionContent">
             <div className="sectionContent-txt" data-aos="zoom-in">
               <h2>Actualités</h2>
+
+              <p>
+                De Lames en Fils déménage !<br /><br />
+
+                C’est avec une immense fierté que je vous annonce une grande nouvelle : mon atelier De Lames en Fils déménage !<br /><br />
+                Après plusieurs années dans mon ancien local, l’aventure continue dans un nouvel espace, plus grand et mieux adapté à mon travail. Ce déménagement est une étape importante qui me permet de poursuivre ma passion dans des conditions optimales et de continuer à vous proposer des couteaux d’exception, alliant tradition et savoir-faire artisanal.<br /><br />
+
+                Ce nouvel atelier est le reflet de mon engagement : créer des pièces uniques avec toujours la même exigence de qualité. J’ai hâte de vous accueillir dans ce nouvel espace et de partager avec vous cette belle évolution !<br /><br />
+
+                <Link to="https://www.google.com/maps/place/282+RD+1090,+38190+Bernin/@45.2710423,5.8679361,3a,88.9y,343.86h,69.89t/data=!3m7!1e1!3m5!1sovB8Dt9IIiBechHnzK4jHA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D20.111496879833325%26panoid%3DovB8Dt9IIiBechHnzK4jHA%26yaw%3D343.8611284703346!7i16384!8i8192!4m15!1m8!3m7!1s0x478a59a55532d2a5:0x3b25dbc9076bc782!2s282+RD+1090,+38190+Bernin!3b1!8m2!3d45.2710739!4d5.8679097!16s%2Fg%2F11w3l90_6y!3m5!1s0x478a59a55532d2a5:0x3b25dbc9076bc782!8m2!3d45.2710739!4d5.8679097!16s%2Fg%2F11w3l90_6y?hl=fr&entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Lien vers google map">📍 Nouvelle adresse : 282 route départementale 1090, 38190 Bernin</Link><br /><br />
+
+                Merci pour votre soutien et à très bientôt !<br /><br />
+                Adrien
+              </p>
               <p>
                 Venez à ma rencontre sur les marchés locaux de Grenoble et ses
                 environs pour découvrir mes rélisations de près.
@@ -160,27 +134,6 @@ const Home = () => {
                 exceptionnelles, mes stages de formation enrichissants ou sur
                 les marchés en Isère.
               </p>
-              <div className="sectionContent-news">
-                {data ? (
-                  data.map((post, index) => (
-                    <article className="newsCard" key={index}>
-                      <div className="newsCard-img">
-                        <img src={post.media_url} alt="" />
-                      </div>
-                      <div className="newsCard-txt">
-                        <p>{post.caption}</p>
-                        <p className="newsCard-txt-signature">
-                          {post.username}
-                          <br />
-                          {post.formattedTimestamp}
-                        </p>
-                      </div>
-                    </article>
-                  ))
-                ) : (
-                  <li>Mise à jour en cours</li>
-                )}
-              </div>
             </div>
           </section>
           <Article
@@ -197,8 +150,8 @@ const Home = () => {
             alt={"Adrien"}
           />
           <ContactMe />
-        </div>
-      </div>
+        </div >
+      </div >
       <Footer />
     </>
   );

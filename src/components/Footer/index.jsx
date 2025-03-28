@@ -35,7 +35,12 @@ const Footer = () => {
       <div className="footerContent-contact">
         <ul>
           <li>0650769955</li>
-          <li>970 Rte de l'Isère, 38420 Le Versoud, France</li>
+          <li>
+            <Link to="https://www.google.com/maps/place/282+RD+1090,+38190+Bernin/@45.2710423,5.8679361,3a,88.9y,343.86h,69.89t/data=!3m7!1e1!3m5!1sovB8Dt9IIiBechHnzK4jHA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D20.111496879833325%26panoid%3DovB8Dt9IIiBechHnzK4jHA%26yaw%3D343.8611284703346!7i16384!8i8192!4m15!1m8!3m7!1s0x478a59a55532d2a5:0x3b25dbc9076bc782!2s282+RD+1090,+38190+Bernin!3b1!8m2!3d45.2710739!4d5.8679097!16s%2Fg%2F11w3l90_6y!3m5!1s0x478a59a55532d2a5:0x3b25dbc9076bc782!8m2!3d45.2710739!4d5.8679097!16s%2Fg%2F11w3l90_6y?hl=fr&entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Lien vers google map">282 route départementale 1090, 38190 Bernin</Link>
+          </li>
           <li>adrienj.guillot@hotmail.fr</li>
         </ul>
       </div>
@@ -73,14 +78,14 @@ const Footer = () => {
       <div className={isOpen ? "is-active" : "is-inactive"}>
         <div className="pepiteggsContent">
           <span className="pepiteggs">🐈‍⬛ MI MI MI ! </span>
-          <Link
+          {/* <Link
             to="https://www.imbertf.fr/"
             className="pepiteggs"
             target="_blank"
             rel="noreferrer"
           >
             www.imbertf.fr
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>

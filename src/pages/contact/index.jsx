@@ -2,7 +2,6 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import ContactForm from "../../components/ContactForm";
-import ContactMap from "../../components/GoogleMap";
 
 const Contact = () => {
     return (
@@ -12,7 +11,7 @@ const Contact = () => {
                 <div className="pageWrapper-content">
                     <section className="sectionContent" data-aos="fade-up">
                         <div className="sectionContent-txt" data-aos="zoom-in">
-                            <h1>
+                            <h1 style={{ color: "inherit" }}>
                                 Je m'engage à fabriquer des couteaux uniques et
                                 de haute qualité qui sont adaptés à vos besoins
                                 et préférences individuelles.
@@ -53,7 +52,6 @@ const Contact = () => {
                         </div>
                     </section>
                     <ContactForm />
-                    <ContactMap />
                 </div>
             </div>
             <Footer />
